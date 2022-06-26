@@ -5,15 +5,15 @@ import logo from "../../assets/images/logo.svg";
 
 const Header = () => {
     return (
-        <header className='my-4 flex justify-between'>
+        <header className='my-4 flex justify-between container mx-auto'>
             <div className='flex items-center gap-2'>
                 <div className='w-12'>
                     <Image src={logo} alt='Logo' />
                 </div>
                 <div>
-                    <h1 className='uppercase font-bold text-2xl text-blue-900'>
+                    <h2 className='uppercase font-bold text-2xl text-blue-900'>
                         Септик-погреб
-                    </h1>
+                    </h2>
                     <p className='text-green-600'>
                         строительство септиков под ключ
                     </p>
