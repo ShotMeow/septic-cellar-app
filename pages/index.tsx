@@ -8,6 +8,7 @@ import image_2 from "../assets/images/2.png";
 import image_3 from "../assets/images/3.png";
 import image_4 from "../assets/images/4.png";
 import pogreb from "../assets/images/pogreb.jpg";
+import Calculator from "../components/Calculator/Calculator";
 
 const Home: NextPage = () => {
     return (
@@ -121,11 +122,8 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className='container mx-auto flex flex-col items-center'>
-                    <h2 className='text-2xl font-semibold'>
-                        Онлайн-конструктор септика
-                    </h2>
-                </section>
+
+                <Calculator />
             </main>
         </div>
     );
