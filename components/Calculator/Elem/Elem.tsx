@@ -6,8 +6,10 @@ import septic_2 from "../../../assets/images/septik_type2.png";
 import dnishe from "../../../assets/images/dnishe.png";
 import { data, IData } from "./Elem.data";
 
+type IDTypo = 1 | 2 | 3 | 4;
+
 interface IElem {
-    id: number;
+    id: IDTypo;
     nextStep: (id: number) => () => void;
 }
 
