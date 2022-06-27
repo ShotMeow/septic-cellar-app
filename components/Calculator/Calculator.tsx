@@ -25,7 +25,7 @@ const Calculator = () => {
                 <div className='flex items-center justify-evenly'>
                     <div className='flex flex-col gap-2 w-2/6'>
                         {state.map((block) => (
-                            <div>
+                            <div key={block.id}>
                                 <div
                                     onClick={handleClick(block.id)}
                                     className='bg-green-600 cursor-pointer text-white rounded py-3 px-6 text-lg'

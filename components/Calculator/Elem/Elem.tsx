@@ -50,6 +50,7 @@ const Elem: FC<IElem> = ({ id, nextStep }) => {
                         >
                             {septics.map((septic) => (
                                 <div
+                                    key={septic.id}
                                     className={
                                         septic.isActive
                                             ? "bg-green-900 text-white rounded-full px-4 py-2"
@@ -188,7 +189,10 @@ const Elem: FC<IElem> = ({ id, nextStep }) => {
                             <div className='flex items-center justify-between'>
                                 <div className='flex flex-col gap-4 mb-6'>
                                     {septics.map((septic) => (
-                                        <label className='flex flex-col gap-2'>
+                                        <label
+                                            key={septic.id}
+                                            className='flex flex-col gap-2'
+                                        >
                                             <span className='flex gap-2'>
                                                 {septic.id == 1
                                                     ? "Первый"
