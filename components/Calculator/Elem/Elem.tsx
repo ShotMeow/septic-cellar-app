@@ -5,8 +5,7 @@ import septic_1 from "../../../assets/images/septik_type1.png";
 import septic_2 from "../../../assets/images/septik_type2.png";
 import dnishe from "../../../assets/images/dnishe.png";
 import { data, IData } from "./Elem.data";
-
-type IDTypo = 1 | 2 | 3 | 4;
+import { IDTypo } from "../Calculator.data";
 
 interface IElem {
     id: IDTypo;

@@ -1,5 +1,7 @@
+export type IDTypo = 1 | 2 | 3 | 4;
+
 export interface ICalc {
-    id: number;
+    id: IDTypo;
     title: string;
     isActive: boolean;
 }
